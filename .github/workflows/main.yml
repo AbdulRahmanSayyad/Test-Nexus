@@ -25,10 +25,10 @@ jobs:
       run: echo "$GITHUB_WORKSPACE"
       
     - name: Move jar file to builds directory
-      run: mv /home/runner/work/Test-Nexus/Test-Nexus/target/my-project-1.0-SNAPSHOT.jar $GITHUB_WORKSPACE/
+      run: mv /home/runner/work/Test-Nexus/Test-Nexus/target/my-project-1.0-SNAPSHOT.jar /builds/
       
     - name: Publish to Nexus
-      uses: snap-ci/nexus-deploy@v1
+      uses: sonatype-nexus-community/nexus-repo-github-action@1.0.0
       with:
         serverUrl: 'http://10.3.0.5:8081/'
         username: 'admin'
