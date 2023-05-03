@@ -27,6 +27,7 @@ jobs:
         serverUrl: 'http://10.3.0.5:8081/'
         username: 'admin'
         password: 'Admin@123#'
+        format: maven2
         repository: 'maven-releases'
         groupId: 'com.example'
         artifactId: 'my-project'
