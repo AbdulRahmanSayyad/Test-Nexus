@@ -21,7 +21,7 @@ jobs:
       run: mvn clean package
 
     - name: Publish to Nexus
-      uses: sonatype-nexus-community/nexus-repo-github-action@v1
+      uses: sonatype-nexus-community/nexus-repo-github-action@v1.0.0
       with:
         serverUrl: 'http://10.3.0.5:8081/nexus/'
         username: 'admin'
