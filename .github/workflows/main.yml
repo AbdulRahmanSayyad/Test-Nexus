@@ -20,7 +20,6 @@ jobs:
 
     - name: Build with Maven
       run: mvn package --file pom.xml
-      working-directory: /github/workspace/
       
     - name: Publish to Nexus
       uses: AbdulRahmanSayyad/nexus-repo-github-action@v1.0.0
@@ -32,4 +31,4 @@ jobs:
         repository: 'maven-releases'
         coordinates: groupId=com.example artifactId=my-project version=1.0.0
         assets: extension=jar
-        filename: /target/my-project-1.0-SNAPSHOT.jar
+        filename: /home/runner/work/Test-Nexus/target/my-project-1.0-SNAPSHOT.jar
