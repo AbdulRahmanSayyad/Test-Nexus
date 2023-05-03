@@ -19,6 +19,7 @@ jobs:
 
 
     - name: Build with Maven
+      working-directory: ./github_workflow
       run: mvn package --file pom.xml
       
     - name: Print directory
