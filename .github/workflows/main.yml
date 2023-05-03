@@ -31,4 +31,4 @@ jobs:
         repository: 'maven-releases'
         coordinates: groupId=com.example artifactId=my-project version=1.0.0
         assets: extension=jar
-        filename: /home/runner/work/Test-Nexus/target/my-project-1.0-SNAPSHOT.jar
+        filename: /target/my-project-1.0-SNAPSHOT.jar
