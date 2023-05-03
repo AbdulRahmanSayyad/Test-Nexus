@@ -28,7 +28,7 @@ jobs:
       run: mv /home/runner/work/Test-Nexus/Test-Nexus/target/my-project-1.0-SNAPSHOT.jar $GITHUB_WORKSPACE/
       
     - name: Publish to Nexus
-      uses: sonatype-nexus-community/nexus-repo-github-action@1.0.0
+      uses: snap-ci/nexus-deploy@v1
       with:
         serverUrl: 'http://10.3.0.5:8081/'
         username: 'admin'
