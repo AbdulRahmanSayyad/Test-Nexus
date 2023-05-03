@@ -20,7 +20,7 @@ jobs:
 
     - name: Build with Maven
       run: |
-        cd /github/workspace/target/
+        cd /github/workspace/
         mvn clean package
 
     - name: Publish to Nexus
