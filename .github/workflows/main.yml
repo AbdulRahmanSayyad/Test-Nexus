@@ -29,6 +29,6 @@ jobs:
         password: 'Admin@123#'
         format: maven2
         repository: 'maven-releases'
-        coordinates: groupId=com.example artifactId=app version=1.0.0
-        packaging: 'jar'
+        coordinates: groupId=com.example artifactId=my-project version=1.0.0
+        assets: extension=jar
         file: 'target/my-project-1.0.0.jar'
